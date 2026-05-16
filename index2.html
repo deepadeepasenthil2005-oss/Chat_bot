@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CMRL Metro Bot</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+<!-- 💬 Floating Button -->
+<div id="chatToggle">🚇</div>
+
+<!-- 🚇 Chat Box -->
+<div id="chatContainer">
+
+    <div class="chat-header">
+        🚇 CMRL Metro Bot
+        <span id="closeChat">✖</span>
+    </div>
+
+    <div id="imageSlider">
+    <img id="sliderImg" src="https://chennaimetrorail.org/wp-content/uploads/2023/12/cmrl-1.jpg">
+    </div>
+
+    <div id="chatBox" class="chat-box">
+
+
+        <div class="menu-grid">
+		
+<div class="menu-card book-ticket-card" onclick="toggleTicketOptions(event)">
+
+    <p>Book your ticket online</p>
+
+    <span class="arrow-icon">›</span>
+
+</div>
+
+<!-- OPTIONS -->
+<div class="ticket-options" id="ticketOptions">
+
+
+    <div class="ticket-option"
+    onclick="window.open('https://wa.me/918300086000','_blank')">
+
+    <img src="https://img.icons8.com/color/96/whatsapp.png">
+    <p>WhatsApp</p>
+
+</div>
+    <div class="ticket-option"
+onclick="window.open('https://pay.google.com/intl/en_in/about/','_blank')">
+
+    <img src="https://telecomtalk.info/wp-content/uploads/2022/12/gpay-how-to-create-or-find-upi-1200x675.jpg">
+    <p>Google Pay</p>
+
+</div>
+
+    <div class="ticket-option"
+onclick="window.open('https://paytm.com/metro-card-recharge/chennai-metro','_blank')">
+
+    <img src="https://img.icons8.com/color/96/paytm.png">
+    <p>Paytm</p>
+
+</div>
+
+    <div class="ticket-option"
+    onclick="window.open('https://www.rapido.bike')">
+
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Rapido_%28company%29.svg/1280px-Rapido_%28company%29.svg.png">
+    <p>Rapido</p>
+
+</div>
+
+
+
+</div>
+
+<div class="menu-card card1" onclick="selectOption('ncmc')">
+    <span class="menu-icon">💳</span>
+    <p>NCMC</p>
+</div>
+
+<div class="menu-card card2" onclick="selectOption('ticket')">
+    <span class="menu-icon">🎟️</span>
+    <p>Ticket</p>
+</div>
+
+<div class="menu-card card6" onclick="showTiming()">
+    <span class="menu-icon">🚇</span>
+    <p>First & Last Train</p>
+</div>
+<div class="menu-card card3" onclick="selectOption('trip')">
+    <span class="menu-icon">🗺️</span>
+    <p>Trip Planner</p>
+</div>
+
+<div class="menu-card card4" onclick="showFeeder()">
+    <span class="menu-icon">🚌</span>
+    <p>Feeder Service</p>
+</div>
+
+<div class="menu-card card5" onclick="selectOption('help')">
+    <span class="menu-icon">🆘</span>
+    <p>Help</p>
+</div>
+
+       
+
+    </div>
+<!-- Inside your chat footer / input area -->
+<div class="input-area">
+
+    <input type="text" id="userInput" placeholder="Type a message...">
+
+    <button id="voiceBtn">🎙️</button>
+
+    <button id="sendBtn">➤</button>
+
+</div>
+
+</div>
+
+<script src="script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chennai Metro Map</title>
+    <link rel="stylesheet" href="mapp.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>🚇 Chennai Metro Station Locator</h2>
+
+    <div class="search-box">
+        <input type="text" id="locationInput" placeholder="Enter station (Eg: Guindy)">
+        <button onclick="locateStation()">Locate</button>
+        <button onclick="showAllStations()">Show All</button>
+    </div>
+
+    <iframe id="mapFrame"></iframe>
+
+</div>
+
+<script src="mapp.js"></script>
+</body>
+</html>
